@@ -8,3 +8,4 @@ sys.path.insert(0, current_dir)
 
 # Run the main app
 import app
+
