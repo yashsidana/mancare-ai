@@ -285,3 +285,4 @@ class ManCareRAGEngine:
             f"{joined}\n\n"
             f"**Recommendation:** Adhere to the documented usage instructions. For prescription-grade treatments, maintain consistency for at least 90 days to achieve visible clinical outcomes."
         )
+
