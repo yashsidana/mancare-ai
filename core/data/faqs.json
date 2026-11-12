@@ -1,0 +1,82 @@
+[
+  {
+    "id": "faq-01",
+    "topic": "Minoxidil Dread Shedding",
+    "question": "Why is my hair shedding more after starting Minoxidil 5%? Should I stop?",
+    "answer": "DO NOT STOP. Increased hair fall during Weeks 2 to 4 of starting Minoxidil is known as 'dread shedding'. Minoxidil accelerates the hair follicle cycle, causing old, thin, telogen (resting) hairs to detach so that thicker, healthier anagen (growing) hairs can push through. This shedding is the primary clinical proof that your scalp follicles are actively responding to the treatment. Shedding typically peaks around Day 21-25 and subsides naturally by Day 35-45, followed by new regrowth.",
+    "source": "Man Matters Hair Loss Clinical Guide & Dermatologist Protocols",
+    "tags": ["minoxidil", "shedding", "hair fall", "dread shedding", "timeline"]
+  },
+  {
+    "id": "faq-02",
+    "topic": "Minoxidil on Damp vs Dry Scalp",
+    "question": "Can I apply Minoxidil immediately after showering or on damp hair?",
+    "answer": "Always apply Minoxidil on a completely DRY scalp. Applying Minoxidil on wet or damp skin significantly alters the absorption rate of the alcohol-glycol base, which can lead to unpredictable systemic absorption, increased scalp irritation, or dizziness. Towel-dry or air-dry your scalp thoroughly for 15-20 minutes after bathing before applying the 1 ml dropper dose.",
+    "source": "Man Matters Minoxidil Official Product Packaging & Pharmacist Directions",
+    "tags": ["minoxidil", "damp hair", "shower", "application", "timing"]
+  },
+  {
+    "id": "faq-03",
+    "topic": "Derma Roller & Beard Oil Timing",
+    "question": "Can I apply Beard Growth Oil right after using the Derma Roller?",
+    "answer": "STRICT CONTRAINDICATION: NEVER apply active beard oils or alcohol-based serums immediately after derma rolling. Microneedling creates thousands of microscopic epidermal punctures. Applying active oils directly into open punctures causes acute chemical burns, severe erythema, and folliculitis (pustules). Protocol: Derma roll on clean skin at night; apply only gentle hydration or let skin rest; wait 24 HOURS before resuming active Beard Growth Oil.",
+    "source": "Man Matters Beard Regrowth Manual & Microneedling Safety Standards",
+    "tags": ["derma roller", "beard oil", "redness", "timing", "irritation"]
+  },
+  {
+    "id": "faq-04",
+    "topic": "Derma Roller Sanitization",
+    "question": "How do I sanitize and care for my 0.5mm titanium derma roller?",
+    "answer": "Before and after every single use, submerge the roller head in 70% isopropyl alcohol (surgical spirit) for 5 to 10 minutes. Allow it to air-dry completely on its protective case before rolling. Never rinse solely with tap water, as tap water harbors bacteria that can cause bacterial skin infections in open micro-channels. Never share your roller with anyone. Replace the roller head after 60 to 90 days as needles become dull and cause skin micro-tears.",
+    "source": "Man Matters Device Hygiene Protocol",
+    "tags": ["derma roller", "sanitization", "alcohol", "hygiene"]
+  },
+  {
+    "id": "faq-05",
+    "topic": "Skincare Active Compatibility: Salicylic Acid and Niacinamide",
+    "question": "Can I use Salicylic Acid Face Wash and Niacinamide Serum in the same daily routine?",
+    "answer": "Yes, Salicylic Acid (BHA) and Niacinamide (Vitamin B3) are highly synergistic when used correctly. Salicylic Acid is oil-soluble and clears out deep pore sebum, while Niacinamide soothes inflammation and strengthens the skin barrier. Best order: Cleanse face with 2% Salicylic Acid Face Wash & rinse thoroughly -> Pat dry -> Apply 2-3 drops of 10% Niacinamide Serum -> Follow with Oil-Free Moisturizer. Always apply Sunscreen SPF 50 in the daytime.",
+    "source": "Man Matters Skincare Regimen Architecture",
+    "tags": ["salicylic acid", "niacinamide", "actives", "layering", "acne"]
+  },
+  {
+    "id": "faq-06",
+    "topic": "Sunscreen Requirement with Chemical Exfoliants",
+    "question": "Why do I need to wear sunscreen when using Salicylic Acid face wash?",
+    "answer": "Beta Hydroxy Acids (Salicylic Acid) exfoliate the outermost layer of dead skin cells (stratum corneum). While this unclogs pores and prevents acne, it temporarily reduces your skin's natural UV barrier by up to 50%, leaving freshly exposed cells vulnerable to rapid sun tanning, hyperpigmentation, and sunburn. Using a broad-spectrum mineral matte sunscreen with SPF 50 PA++++ daily is mandatory when using chemical exfoliants.",
+    "source": "Man Matters Dermatological Safety Compendium",
+    "tags": ["sunscreen", "spf", "salicylic acid", "sunburn", "uv"]
+  },
+  {
+    "id": "faq-07",
+    "topic": "Scalp Itching & Ketoconazole with Minoxidil",
+    "question": "My scalp is itching while using Minoxidil. Can I use Ketoconazole shampoo with it?",
+    "answer": "Yes, this is an excellent combination. Mild scalp itching is often caused by the alcohol/propylene glycol vehicle in Minoxidil, or concurrent mild seborrheic dermatitis. Ketoconazole 2% Shampoo treats the fungal root cause of dandruff and soothes inflammation. How to combine: Wash scalp with Ketoconazole Shampoo twice a week, leave lather on scalp for 5 minutes, rinse thoroughly, and wait until scalp is 100% dry before applying topical Minoxidil at night. If itching turns into severe burning, oozing, or rash, halt application and consult a physician.",
+    "source": "Man Matters Trichology Clinical Guidelines",
+    "tags": ["ketoconazole", "minoxidil", "scalp itch", "dandruff", "layering"]
+  },
+  {
+    "id": "faq-08",
+    "topic": "Topical Finasteride Side Effects & Safety",
+    "question": "Does topical Finasteride have the same sexual side effects as oral Finasteride tablets?",
+    "answer": "Topical Finasteride 0.1% is specifically formulated in a localized liposomal carrier to target 5-alpha-reductase enzymes directly within the scalp skin. Clinical studies show that topical finasteride reduces scalp DHT by over 70% while resulting in significantly lower systemic blood serum DHT reduction compared to oral 1mg tablets. The incidence of systemic sexual side effects is statistically negligible (<0.5%). However, women who are or may become pregnant must not touch or handle the topical solution due to birth defect risks.",
+    "source": "Man Matters Clinical Research Dossier on Topical 5-Alpha Reductase Inhibitors",
+    "tags": ["finasteride", "topical", "side effects", "dht", "safety"]
+  },
+  {
+    "id": "faq-09",
+    "topic": "Shilajit Timing, Dosages & Carriers",
+    "question": "How should I consume Pure Himalayan Shilajit Resin? Can I take it with Ashwagandha?",
+    "answer": "Dissolve a pea-sized portion (300-500 mg using the calibrated spoon) in lukewarm water or warm milk. Best taken in the morning on an empty stomach for daytime vitality, or 30-45 minutes prior to athletic workouts. Yes, combining Shilajit with Ashwagandha is a classic Ayurvedic synergy: Shilajit delivers bioavailable minerals and increases cellular ATP energy, while Ashwagandha regulates cortisol and promotes muscular recovery. Recommendation: Shilajit in the morning with warm water/milk, and Ashwagandha tablet after dinner before sleep.",
+    "source": "Man Matters Ayurvedic Pharmacopoeia Guidelines",
+    "tags": ["shilajit", "ashwagandha", "nutrition", "timing", "dosage"]
+  },
+  {
+    "id": "faq-10",
+    "topic": "Red-Flag Adverse Reactions & Medical Escalation",
+    "question": "What symptoms require immediate discontinuation and medical doctor escalation?",
+    "answer": "EMERGENCY SAFETY PROTOCOL: Stop product usage immediately and seek qualified medical attention if you experience: (1) Rapid heart rate (tachycardia) or chest pain after applying Minoxidil; (2) Swelling of the lips, tongue, face, or throat; (3) Severe skin blistering, oozing, or chemical burning; (4) Unexplained lightheadedness or fainting spells. For mild symptoms (transient flaking, minor redness), wash the area with cool water, pause active serums for 48 hours, and utilize the ManCare in-app doctor teleconsultation pathway.",
+    "source": "Man Matters Clinical Safety & Pharmacovigilance Standard Operating Procedure",
+    "tags": ["emergency", "safety", "allergy", "escalation", "side effects", "chest pain"]
+  }
+]

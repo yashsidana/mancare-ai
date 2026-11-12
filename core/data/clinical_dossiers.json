@@ -1,0 +1,93 @@
+[
+  {
+    "active_name": "Minoxidil 5%",
+    "category": "Hair Vasodilator",
+    "mechanism_of_action": "Opens potassium channels in vascular smooth muscle cells, causing microvascular dilation in the scalp. This increases cutaneous blood flow, oxygenation, and nutrient delivery to miniaturized hair follicles, stimulating transitions from telogen (resting) into anagen (growth).",
+    "clinical_efficacy_window": "3 to 6 months of daily 1ml BID application.",
+    "known_biological_adaptation": "Telogen Effluvium (Dread Shedding) between Days 14 and 35. This is non-pathological and self-limiting.",
+    "carrier_formulation": "Alcohol, propylene glycol, or liposomal aqueous vehicle.",
+    "official_man_matters_rules": [
+      "Scalp must be completely dry before application.",
+      "Never wash hair within 4 hours of applying.",
+      "Wash hands thoroughly after use.",
+      "Stopping application causes regrown hair to shed within 3-4 months."
+    ]
+  },
+  {
+    "active_name": "Topical Finasteride 0.1%",
+    "category": "5-Alpha Reductase Inhibitor",
+    "mechanism_of_action": "Selectively inhibits Type II 5-alpha-reductase enzymes in the scalp skin, blocking the conversion of testosterone into dihydrotestosterone (DHT) locally at the follicle root without significant systemic androgen suppression.",
+    "clinical_efficacy_window": "Reduced shedding at 60 days; hair caliber thickening at 120-180 days.",
+    "known_biological_adaptation": "Transient scalp flaking or mild carrier sensitivity during weeks 1-3.",
+    "carrier_formulation": "Liposomal carrier optimizing transdermal delivery while restricting capillary systemic uptake.",
+    "official_man_matters_rules": [
+      "Prescription-backed formulation.",
+      "Strictly contraindicated for females.",
+      "Apply once daily at bedtime to dry scalp."
+    ]
+  },
+  {
+    "active_name": "Redensyl (3%) + Procapil (3%) + Capixyl (2%)",
+    "category": "Multi-Peptide Hair Stem Cell Complex",
+    "mechanism_of_action": "Redensyl targets hair follicle stem cells (Outer Root Sheath) to trigger a new hair cycle. Procapil enhances blood perfusion and strengthens follicle anchoring via Biotinyl-GHK and Apigenin. Capixyl combines clover extract with acetyl tetrapeptide-3 to reduce follicle inflammation.",
+    "clinical_efficacy_window": "60 to 90 days of continuous once-daily application.",
+    "known_biological_adaptation": "Minimal to zero shedding. High tolerability on sensitive scalps.",
+    "carrier_formulation": "Water-soluble peptide solution, non-sticky and zero greasy residue.",
+    "official_man_matters_rules": [
+      "Can be applied at night without needing to shampoo next morning.",
+      "Safe non-hormonal option for early hairline receding."
+    ]
+  },
+  {
+    "active_name": "Ketoconazole 2%",
+    "category": "Topical Antifungal & Anti-Androgenic Agent",
+    "mechanism_of_action": "Inhibits ergosterol synthesis in fungal cell membranes, eradicating Malassezia yeast overgrowth responsible for seborrheic dermatitis and severe dandruff. Also exhibits mild anti-androgenic activity by down-regulating scalp DHT receptors.",
+    "clinical_efficacy_window": "Noticeable flake clearance in 2-4 washes; full relief in 2 weeks.",
+    "known_biological_adaptation": "Can dry out hair fibers if left on longer than 5 minutes.",
+    "carrier_formulation": "Foaming surfactant matrix with conditioning aloe vera.",
+    "official_man_matters_rules": [
+      "Must remain on scalp for 5 full minutes prior to rinsing.",
+      "Use 2x weekly during flare-ups, 1x weekly for prevention.",
+      "Allow scalp to dry completely before applying Minoxidil."
+    ]
+  },
+  {
+    "active_name": "Salicylic Acid 2%",
+    "category": "Beta Hydroxy Acid (BHA) Exfoliant",
+    "mechanism_of_action": "Lipophilic (oil-soluble) chemical exfoliant that dissolves keratin plugs and inter-cellular lipids deep inside hair follicles and pores. Regulates excessive sebum production and clears acne-causing bacteria.",
+    "clinical_efficacy_window": "Instant oil control; comedonal acne clearance in 2-3 weeks.",
+    "known_biological_adaptation": "Transient purging during the first 10-14 days as trapped sub-surface impurities surface.",
+    "carrier_formulation": "Gentle gel-based cleanser with soothing witch hazel.",
+    "official_man_matters_rules": [
+      "Lather for 60 seconds on wet face morning and night.",
+      "Mandatory broad-spectrum SPF 50 sunscreen during daylight hours.",
+      "Never mix directly in the same step with high-percentage Retinoids or chemical peels."
+    ]
+  },
+  {
+    "active_name": "Niacinamide 10% + Zinc PCA 1%",
+    "category": "Epidermal Barrier & Sebum Modulator",
+    "mechanism_of_action": "Niacinamide (Vitamin B3) stimulates ceramide synthesis in the skin barrier, reduces cutaneous trans-epidermal water loss (TEWL), and suppresses melanosome transfer to lighten post-inflammatory dark marks. Zinc PCA regulates sebaceous gland secretion.",
+    "clinical_efficacy_window": "Pore tightening in 14 days; hyperpigmentation reduction in 6-8 weeks.",
+    "known_biological_adaptation": "Generally well-tolerated. High anti-inflammatory capability.",
+    "carrier_formulation": "Water-gel serum matrix with Centella Asiatica.",
+    "official_man_matters_rules": [
+      "Apply 2-3 drops after cleansing and before moisturizing.",
+      "Synergistic with Salicylic Acid, Hyaluronic Acid, and Peptides.",
+      "If using pure Vitamin C, alternate steps (AM Niacinamide, PM Vitamin C)."
+    ]
+  },
+  {
+    "active_name": "Pure Himalayan Shilajit Resin (>75% Fulvic Acid)",
+    "category": "Ayurvedic Bio-Mineral Adaptogen",
+    "mechanism_of_action": "Fulvic acid acts as an electron shuttle, enhancing cellular mitochondrial ATP synthesis and accelerating trans-membrane nutrient absorption. Rich in 84+ ionic trace minerals that regulate cortisol and support hormonal synthesis.",
+    "clinical_efficacy_window": "Subjective stamina increase in 7-10 days; peak vitality in 60-90 days.",
+    "known_biological_adaptation": "Strong natural mineral aroma and earthy taste.",
+    "carrier_formulation": "Pure purified black semi-solid resin.",
+    "official_man_matters_rules": [
+      "Dissolve 300-500mg in lukewarm water or milk.",
+      "Consume in morning on empty stomach or pre-workout.",
+      "Do not combine with boiling hot water or alcohol."
+    ]
+  }
+]
