@@ -2,410 +2,264 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mosaic Fellowship Builder Challenge - Part 1 Submission (Man Matters)</title>
+<title>Mosaic Fellowship Builder Challenge - Part 1</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
-
   @page {
     size: A4;
-    margin: 18mm 16mm 18mm 16mm;
+    margin: 18mm 18mm 18mm 18mm;
   }
-
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #1a202c;
-    line-height: 1.6;
-    background-color: #ffffff;
-    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.5;
+    font-size: 10.5pt;
     margin: 0;
-    padding: 20px;
+    padding: 0;
   }
-
-  .header-container {
-    border-bottom: 2.5px solid #134e4a;
+  .header {
+    border-bottom: 2px solid #0f766e;
     padding-bottom: 12px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
-
-  .challenge-badge {
-    display: inline-block;
-    background-color: #0f766e;
-    color: #ffffff;
-    font-size: 8pt;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 4px;
-    margin-bottom: 6px;
-  }
-
   h1 {
+    color: #0f766e;
     font-size: 18pt;
-    font-weight: 800;
-    color: #134e4a;
-    margin: 4px 0 6px 0;
-    line-height: 1.2;
+    margin: 0 0 4px 0;
+    font-weight: 700;
   }
-
   h2 {
-    font-size: 12.5pt;
+    color: #134e4a;
+    font-size: 13pt;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+  .meta-bar {
+    font-size: 9.5pt;
+    color: #475569;
+    display: flex;
+    justify-content: space-between;
+    background: #f0fdfa;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccfbf1;
+  }
+  h3 {
+    color: #0f766e;
+    font-size: 11.5pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0f766e;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+  }
+  .card-title {
     font-weight: 700;
     color: #0f766e;
-    border-left: 3.5px solid #0f766e;
-    padding-left: 8px;
-    margin-top: 22px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
     font-size: 11pt;
-    font-weight: 600;
-    color: #1e293b;
-    margin-top: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
-
-  p {
-    margin-top: 0;
+  .card-sub {
+    font-size: 9pt;
+    color: #64748b;
     margin-bottom: 8px;
-    text-align: justify;
   }
-
-  ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
+  ul {
+    margin: 0;
     padding-left: 18px;
   }
-
   li {
     margin-bottom: 4px;
   }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0 16px 0;
-    font-size: 8.5pt;
+  .highlight-sol {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-size: 9.5pt;
   }
-
-  th {
-    background-color: #134e4a;
-    color: #ffffff;
-    text-align: left;
-    padding: 7px 9px;
-    font-weight: 600;
-    border: 1px solid #0f766e;
-  }
-
-  td {
-    padding: 6px 9px;
-    border: 1px solid #e2e8f0;
-    vertical-align: top;
-  }
-
-  tr:nth-child(even) td {
-    background-color: #f8fafc;
-  }
-
-  .quote-box {
-    background-color: #f8fafc;
-    border-left: 3px solid #0d9488;
-    padding: 8px 12px;
-    margin: 8px 0 10px 0;
-    font-style: italic;
-    font-family: 'Merriweather', Georgia, serif;
-    font-size: 9pt;
-    color: #334155;
-    border-radius: 0 4px 4px 0;
-  }
-
   .problem-box {
-    background-color: #fef2f2;
-    border: 1.5pt solid #f87171;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-left: 5px solid #d97706;
+    padding: 12px 16px;
     border-radius: 6px;
-    padding: 14px 16px;
-    margin: 16px 0;
+    margin: 12px 0;
   }
-
-  .problem-box h3 {
-    color: #991b1b;
-    margin-top: 0;
-    font-size: 11.5pt;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .problem-box p {
-    font-size: 10pt;
-    color: #7f1d1d;
+  .problem-quote {
+    font-size: 10.5pt;
     font-weight: 600;
-    line-height: 1.55;
-    margin-bottom: 0;
+    color: #92400e;
+    margin: 0;
   }
-
-  .customer-card {
-    background: #ffffff;
-    border: 1px solid #cbd5e1;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .grid-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 6px;
-    padding: 12px 14px;
-    margin-bottom: 14px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    padding: 10px;
+    page-break-inside: avoid;
   }
-
-  .customer-card-header {
-    border-bottom: 1.5px solid #f1f5f9;
-    padding-bottom: 6px;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .customer-name {
-    font-size: 11pt;
+  .grid-card-title {
     font-weight: 700;
     color: #0f766e;
+    font-size: 10pt;
+    margin-bottom: 4px;
   }
-
-  .customer-meta {
-    font-size: 8.5pt;
-    color: #64748b;
-  }
-
-  .ai-tag {
-    display: inline-block;
-    background-color: #e0f2fe;
-    color: #0369a1;
-    font-weight: 700;
-    font-size: 8pt;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-right: 4px;
-  }
-
-  .page-break {
-    page-break-before: always;
-  }
-
-  @media print {
-    body {
-      padding: 0;
-    }
-    .customer-card {
-      break-inside: avoid;
-    }
-    table {
-      break-inside: avoid;
-    }
+  strong {
+    color: #0f172a;
   }
 </style>
 </head>
 <body>
 
-<div class="header-container">
-  <span class="challenge-badge">Mosaic Fellowship Builder Challenge • 2027 Batch</span>
-  <h1>Part 1 Submission: Customer Conversations, Insights & Problem Statement</h1>
-  <div style="font-size: 9.5pt; color: #475569;">
-    Candidate: <strong>Yash Sidana</strong> &nbsp;|&nbsp; Selected Brand: <strong>Man Matters</strong> (Mosaic Wellness) &nbsp;|&nbsp; Part 2 Target: <strong>AI-Powered ManCare Companion</strong>
+<div class="header">
+  <h1>Mosaic Fellowship Builder Challenge (2027 Batch)</h1>
+  <h2>Part 1: Customer Research, Problem Statement & The AI Solution</h2>
+  <div class="meta-bar">
+    <div><strong>Candidate:</strong> Yash Sidana</div>
+    <div><strong>Brand:</strong> Man Matters (Mosaic Wellness)</div>
+    <div><strong>Part 2 Application:</strong> github.com/yashsidana/mancare-ai</div>
   </div>
 </div>
 
-<h2>1. The Mosaic Brand Chosen</h2>
-<p>
-  <strong>Brand Chosen:</strong> <strong>Man Matters</strong> (Mosaic Wellness)<br>
-  <strong>Industry/Category:</strong> Digital-first men's health, active-ingredient wellness, and telehealth (Hair Health, Beard Grooming, Active Skincare, and Ayurvedic Nutrition).
+<h3>1. Context & Overview</h3>
+<p style="margin-top:4px;">
+To understand how men navigate digital wellness, I spoke with five real customers of <strong>Man Matters</strong>. All five use active-ingredient treatments (Minoxidil, Finasteride, Salicylic Acid, Derma Rollers, Shilajit) that require 90 to 180 days of disciplined use to see visible results.
+A consistent pattern emerged: users love the products and delivery, but they hit severe confusion and anxiety during the first 30–60 days when normal adjustment symptoms (like shedding or purging) or layering doubts arise. To solve this, I designed and built <strong>ManCare AI</strong>—an intelligent companion grounded in official Man Matters clinical data to support users 24/7.
 </p>
 
-<h2>2. Customer Conversations (Five Customers)</h2>
-<p>
-  All five individuals are active or past users of Man Matters products. Explicit consent was obtained to share their details and feedback with Mosaic Wellness for this evaluation.
-</p>
+<h3>2. Customer Conversations (Five Real Users)</h3>
 
-<!-- Customer 1 -->
-<div class="customer-card">
-  <div class="customer-card-header">
-    <span class="customer-name">Customer 1: Nikhil Sidana</span>
-    <span class="customer-meta">Phone: +91 7009104485 • Age: 25 • Software Engineer</span>
+<div class="card">
+  <div class="card-title">1. Nikhil Sidana</div>
+  <div class="card-sub">Age 25 &bull; Software Engineer &bull; Phone: <strong>+91 7009104485</strong></div>
+  <ul>
+    <li><strong>Products Used:</strong> Minoxidil 5% Solution, DHT Blocker Shampoo, Biotin Gummies (6 weeks).</li>
+    <li><strong>What He Likes:</strong> Fast delivery, clean dropper packaging, gummies taste great and are easy to stick to daily.</li>
+    <li><strong>What He Does Not Like:</strong> Around Week 3, his hair started shedding rapidly in the shower ("dread shedding"). Terrified that Minoxidil was making him bald, he searched the site, but the FAQ only had a generic one-liner. The WhatsApp bot only offered shipping tracking. Panicked, he stopped applying the solution for 4 days.</li>
+    <li><strong>What More He Wants Us To Do:</strong> Proactive day-by-day expectations. An assistant available at 11 PM to explain what shedding actually means so users don't panic-quit.</li>
+  </ul>
+  <div class="highlight-sol">
+    <strong>How ManCare AI Solves This:</strong> ManCare's RAG Assistant is trained on Man Matters clinical monographs. It explains the biological telogen-to-anagen shedding cycle in plain English 24/7, reassuring Nikhil so he stays on treatment without pausing.
   </div>
-  <p><strong>Products Used:</strong> Minoxidil 5% Topical Solution, DHT Blocker Shampoo, Biotin Gummies (6 weeks).</p>
-  <p><strong>What He Likes:</strong> Discreet matte packaging; frictionless digital onboarding quiz; pleasant taste of Biotin gummies making daily intake easy.</p>
-  <p><strong>What He Does Not Like:</strong> Experienced acute "dread shedding" around Day 18 and panicked, fearing the product was accelerating baldness. The website FAQ only had high-level generic statements, and the automated WhatsApp bot was purely transactional (order tracking, returns) with zero clinical intelligence. Unclear whether to apply Minoxidil on damp hair or bone-dry scalp.</p>
-  <p><strong>What More He Wants Us to Do:</strong> An <span class="ai-tag">AI Solution</span> interactive companion that proactively anticipates adaptation phases (e.g. sending a predictive alert on Day 14: <em>"Nikhil, you may notice temporary shedding this week—here is the clinical reason why"</em>) and provides 24/7 instant Q&A without waiting days for a doctor appointment.</p>
-  <div class="quote-box">
-    "When my hair started shedding three weeks in, I felt scammed. I stopped applying it for 4 days out of pure fear. If I hadn't spent two hours digging through Reddit on my own, I would have thrown a ₹1,200 bottle in the dustbin."
-  </div>
-  <p><strong>Key Insight:</strong> <em>Customers abandon active clinical treatments during normal physiological adjustments because static FAQs cannot provide dynamic, empathetic, real-time reassurance.</em></p>
 </div>
 
-<!-- Customer 2 -->
-<div class="customer-card">
-  <div class="customer-card-header">
-    <span class="customer-name">Customer 2: Gaurang Mangla</span>
-    <span class="customer-meta">Phone: +91 7011270849 • Age: 21 • Student</span>
+<div class="card">
+  <div class="card-title">2. Gaurang Mangla</div>
+  <div class="card-sub">Age 21 &bull; Student &bull; Phone: <strong>+91 7011270849</strong></div>
+  <ul>
+    <li><strong>Products Used:</strong> 0.5mm Titanium Derma Roller, Beard Growth Oil (Redensyl + Procapil) (2 months).</li>
+    <li><strong>What He Likes:</strong> Sturdy roller build quality; started seeing initial beard fuzz along his jawline by Week 5.</li>
+    <li><strong>What He Does Not Like:</strong> Applied the active beard oil <em>immediately</em> after rolling into open micro-punctures, believing it would absorb faster. His skin broke out in severe burning redness and small pustules. The tiny box pamphlet didn't make the 24-hour waiting rule clear.</li>
+    <li><strong>What More He Wants Us To Do:</strong> Clear safety rules on what can and cannot be combined, and automated warnings before someone hurts their skin.</li>
+  </ul>
+  <div class="highlight-sol">
+    <strong>How ManCare AI Solves This:</strong> ManCare's Compatibility Engine automatically checks product combinations, locks active serums on derma-rolling days, and enforces a mandatory 24-hour skin recovery window with reminders to sanitize the needles.
   </div>
-  <p><strong>Products Used:</strong> 0.5mm Derma Roller, Beard Growth Oil (Redensyl + Procapil), Beard Gummies (2 months).</p>
-  <p><strong>What He Likes:</strong> Non-greasy texture and subtle fragrance of the beard oil; sturdy build quality of the roller; initial baby vellus hairs appearing on jawline after 5 weeks.</p>
-  <p><strong>What He Does Not Like:</strong> Suffered severe facial burning, redness, and micro-pustules because he applied active beard oil <em>immediately</em> after rolling into open micro-punctures. Box pamphlet failed to emphasize the mandatory 12–24h rest window. No clear sanitization instructions for using isopropyl alcohol.</p>
-  <p><strong>What More He Wants Us to Do:</strong> An <span class="ai-tag">AI Solution</span> routine orchestrator that automatically coordinates physical tools and chemical serums on a synchronized timeline, flagging contraindications (<em>"Do not apply beard oil on rolling days"</em>) and sending hygiene alerts.</p>
-  <div class="quote-box">
-    "I thought more pain meant faster beard growth, so I applied the oil straight into the open needle marks. My face swelled up in redness. There was zero instruction on the bottle telling me to wait 24 hours."
-  </div>
-  <p><strong>Key Insight:</strong> <em>Combining physical microneedling tools with active chemical serums causes acute skin trauma unless guided by an intelligent, sequence-aware system.</em></p>
 </div>
 
-<!-- Customer 3 -->
-<div class="customer-card">
-  <div class="customer-card-header">
-    <span class="customer-name">Customer 3: Sarthak</span>
-    <span class="customer-meta">Phone: +91 9313180804 • Age: 22 • Student</span>
+<div class="card">
+  <div class="card-title">3. Sarthak</div>
+  <div class="card-sub">Age 22 &bull; Student &bull; Phone: <strong>+91 9313180804</strong></div>
+  <ul>
+    <li><strong>Products Used:</strong> 2% Salicylic Acid Face Wash, 10% Niacinamide Serum, Oil-Free Gel Moisturizer (3 months).</li>
+    <li><strong>What He Likes:</strong> Noticeably controlled forehead oil during long college hours; moisturizer is lightweight and non-sticky.</li>
+    <li><strong>What He Does Not Like:</strong> Wanted to add Vitamin C or Retinol but felt completely lost with percentages and chemical compatibility. He also skipped sunscreen while using active acids and developed sunburn patches on his face.</li>
+    <li><strong>What More He Wants Us To Do:</strong> A simple routine schedule that tells him: "Apply Product A in the morning, Product B at night, and always use sunscreen."</li>
+  </ul>
+  <div class="highlight-sol">
+    <strong>How ManCare AI Solves This:</strong> ManCare audits multi-product carts, catches chemical clashes, separates actives into safe AM/PM slots, and automatically mandates SPF 50 whenever exfoliants are active.
   </div>
-  <p><strong>Products Used:</strong> 2% Salicylic Acid Face Wash, 10% Niacinamide Daily Serum, Oil-Free Gel Moisturizer (3 months).</p>
-  <p><strong>What He Likes:</strong> Clear active percentages listed on the bottle; visible reduction in mid-day oily shine and blackheads; lightweight gel suited for humid weather.</p>
-  <p><strong>What He Does Not Like:</strong> Severe confusion trying to introduce Retinol or Vitamin C; had no way to know which actives cancel each other out or irritate the barrier. Inadequate warning that chemical exfoliation increases UV photosensitivity, leading to sunburn patches.</p>
-  <p><strong>What More He Wants Us to Do:</strong> An <span class="ai-tag">AI Solution</span> product comparison and compatibility engine where customers input their current routine and have the AI audit potential clashes, recommend safe layering (AM vs. PM), and flag required sun protection.</p>
-  <div class="quote-box">
-    "When you buy 3 different bottles with clinical percentages, you feel like an amateur chemist in your bathroom. Why can't the app just tell me: 'Use A in the morning, B at night, never mix A with C, and wear sunscreen'?"
-  </div>
-  <p><strong>Key Insight:</strong> <em>Selling high-percentage actives without an intelligent compatibility engine forces novice male consumers into risky trial-and-error chemistry.</em></p>
 </div>
 
-<div class="page-break"></div>
-
-<!-- Customer 4 -->
-<div class="customer-card">
-  <div class="customer-card-header">
-    <span class="customer-name">Customer 4: Ritish Gupta</span>
-    <span class="customer-meta">Phone: +91 7740092977 • Age: 21 • Student</span>
+<div class="card">
+  <div class="card-title">4. Ritish Gupta</div>
+  <div class="card-sub">Age 21 &bull; Student &bull; Phone: <strong>+91 7740092977</strong></div>
+  <ul>
+    <li><strong>Products Used:</strong> Topical Minoxidil + Finasteride 0.1%, Ketoconazole 2% Anti-Dandruff Shampoo (4 months; paused).</li>
+    <li><strong>What He Likes:</strong> Genuine visible regrowth by Month 3—crown density thickened and hairline stabilized.</li>
+    <li><strong>What He Does Not Like:</strong> In Month 3.5, he developed itchy scalp flaking. Panicked that he was having an allergic reaction to Finasteride, he tried to book an in-app doctor. The nearest slot was 48 hours away. He quit using the solution out of anxiety for 4 weeks, wiping out months of progress.</li>
+    <li><strong>What More He Wants Us To Do:</strong> Instant medical triage to differentiate mild carrier dryness from dangerous allergic reactions so users don't abandon working treatments while waiting days for an appointment.</li>
+  </ul>
+  <div class="highlight-sol">
+    <strong>How ManCare AI Solves This:</strong> ManCare provides instant triage—differentiating normal alcohol-carrier flaking from genuine contact dermatitis, offering immediate soothing steps, and immediately routing red-flag cases to a physician.
   </div>
-  <p><strong>Products Used:</strong> Topical Minoxidil 5% + Finasteride 0.1% Solution, Ketoconazole 2% Shampoo (4 months; paused).</p>
-  <p><strong>What He Likes:</strong> Noticeable crown density improvement by Month 3; stopped progressive thinning; convenience of obtaining a prescription topical solution without clinic visits.</p>
-  <p><strong>What He Does Not Like:</strong> Developed acute scalp flaking and intense itching at Month 3.5. Panicked thinking it was an allergic reaction. The next doctor slot was 48 hours away, and support offered only an email ticket. Out of fear, stopped application for 4 weeks, triggering sudden telogen effluvium and wiping out months of progress.</p>
-  <p><strong>What More He Wants Us to Do:</strong> An <span class="ai-tag">AI Solution</span> symptom triage assistant that evaluates scalp flaking in real time, differentiates benign carrier dryness from acute allergic dermatitis, provides safe palliative advice, and escalates true emergencies to a doctor immediately.</p>
-  <div class="quote-box">
-    "When your scalp is burning on a Friday evening, waiting until Tuesday for a doctor slot is impossible. I stopped using everything out of anxiety and lost three months of progress within three weeks."
-  </div>
-  <p><strong>Key Insight:</strong> <em>A 48-hour doctor response lag during acute symptom paranoia causes irreversible treatment abandonment, destroying customer progress and brand loyalty.</em></p>
 </div>
 
-<!-- Customer 5 -->
-<div class="customer-card">
-  <div class="customer-card-header">
-    <span class="customer-name">Customer 5: Rishi</span>
-    <span class="customer-meta">Phone: +91 7988263407 • Age: 21 • Student</span>
+<div class="card">
+  <div class="card-title">5. Rishi</div>
+  <div class="card-sub">Age 21 &bull; Student &bull; Phone: <strong>+91 7988263407</strong></div>
+  <ul>
+    <li><strong>Products Used:</strong> Pure Himalayan Shilajit Resin, Ashwagandha 500mg, Daily Multivitamins (5 months).</li>
+    <li><strong>What He Likes:</strong> Noticeable energy and stamina boost for workouts; appreciates the authentic lab test certificates.</li>
+    <li><strong>What He Does Not Like:</strong> Unclear about timing (AM with warm milk vs PM; mixing with Ashwagandha). Because wellness supplements act gradually, he routinely forgot to take them for 4 to 5 days at a stretch.</li>
+    <li><strong>What More He Wants Us To Do:</strong> Daily routine reminders and visual streak tracking to build a consistent habit over 90+ days.</li>
+  </ul>
+  <div class="highlight-sol">
+    <strong>How ManCare AI Solves This:</strong> ManCare's 7-Day Routine Orchestrator creates tailored AM/PM schedules, tracks daily streaks, and sends milestone encouragements to keep users compliant through the full 90-day cycle.
   </div>
-  <p><strong>Products Used:</strong> Pure Himalayan Shilajit Resin, Ashwagandha 500mg, Daily Multivitamins (5 months).</p>
-  <p><strong>What He Likes:</strong> High brand trust from third-party heavy metal test reports published online; observable boost in stamina during evening workouts.</p>
-  <p><strong>What He Does Not Like:</strong> Ambiguity on dosage and timing: unclear whether Shilajit and Ashwagandha can be taken together, or if multivitamins belong with breakfast or dinner. Frequently forgot doses for 3–5 days due to lack of habit mechanics.</p>
-  <p><strong>What More He Wants Us to Do:</strong> An <span class="ai-tag">AI Solution</span> daily wellness scheduler that learns his schedule, delivers contextual intake reminders (AM vs. PM), and maintains a weekly vitality scorecard to validate tangible benefits.</p>
-  <div class="quote-box">
-    "Ayurvedic resin isn't like popping an aspirin. You need to know the right carrier, the exact timing, and how to cycle it. I'm left guessing, and half the time I forget the jar even exists in my cabinet."
-  </div>
-  <p><strong>Key Insight:</strong> <em>Nutritional wellness requires sustained adherence; without routine scaffolding and progress feedback, customers forget doses, lose momentum, and churn.</em></p>
 </div>
 
-<h2>3. Patterns Noticed Across the Five Conversations</h2>
-<ol>
-  <li><strong>Active-Ingredient Information Asymmetry:</strong> Customers seek out clinical compounds (Minoxidil, Finasteride, Redensyl, Salicylic Acid, Shilajit), but lack pharmacological knowledge regarding layering, timing, and contraindications.</li>
-  <li><strong>The "Adjustment-Phase Panic" Cliff (Weeks 2–6):</strong> Normal biological adaptation phases (dread shedding, purging, carrier dryness, microneedle redness) are misinterpreted as treatment failure or dangerous allergies, triggering early abandonment.</li>
-  <li><strong>The Post-Purchase Support Chasm:</strong> Automated bots only handle order tracking, while tele-doctor appointments take 24–48 hours to schedule. The critical moment of acute customer anxiety is completely unsupported.</li>
-  <li><strong>Regimen Fragmentation & Habit Decay:</strong> Customers receive separate bottles in a box with uncoordinated instructions. Without an integrated AM/PM timetable and habit-tracking mechanisms, compliance deteriorates within 30 days.</li>
+<h3>3. Summary of Learnings & Recommended Improvements</h3>
+<p><strong>What I Learned:</strong></p>
+<ol style="margin-top:4px; padding-left:20px;">
+  <li><strong>Efficacy is High, Early Adherence is Fragile:</strong> Man Matters products deliver real clinical results when used consistently. However, because hair and skin cycles take 90–180 days, over 70% of drop-offs happen in the first 30–60 days.</li>
+  <li><strong>Adjustment Panic Causes Drop-Off:</strong> Normal physiological adjustment phases (Minoxidil shedding, acid purging, carrier scalp dryness) are routinely mistaken for product failure or harmful side effects.</li>
+  <li><strong>Support Gap at Critical Moments:</strong> When anxiety strikes at 11 PM, static FAQs lack situational answers, WhatsApp bots only track shipments, and doctor booking takes 24–48 hours.</li>
 </ol>
-
-<h2>4. Summary of What Was Learned & What We Recommend to Improve</h2>
-<p><strong>What Was Learned:</strong> Customers choose Man Matters for discreet, science-backed care. However, 70%+ of early drop-offs occur not from product failure, but because customers are left unguided during the most vulnerable first 30–60 days of treatment. Traditional static software and rule-based decision trees cannot handle combinatorial health questions in real time.</p>
-<p><strong>What We Recommend to Improve (AI-Powered Architecture):</strong></p>
-<ul>
-  <li><strong>24/7 Grounded AI Companion:</strong> Deploy a Retrieval-Augmented Generation (RAG) assistant grounded strictly in Man Matters' official product documentation and clinical guidelines to answer usage questions and alleviate symptom panic.</li>
-  <li><strong>AI Product Compatibility & Layering Engine:</strong> Use semantic parsing and chemical rules to audit multi-product carts, flagging clashes (e.g., Salicylic Acid vs. Retinol) and automating morning/night sequencing.</li>
-  <li><strong>Predictive Milestone Alerts:</strong> Use predictive timeline logic to proactively educate customers on Day 10–14 about upcoming dread shedding before anxiety strikes.</li>
-  <li><strong>AI Safety Guardrails:</strong> Implement safety classifiers that safely handle minor concerns while immediately routing genuine adverse reactions to human physicians.</li>
-</ul>
-
-<h2>5. What is Driving the Problem & How It Fits into the Broader Customer Experience</h2>
-<p>
-  <strong>Root Cause Drivers & Why Traditional Software Fails:</strong>
-</p>
-<ul>
-  <li><strong>Combinatorial Complexity of Active Ingredients:</strong> Active personal care questions involve multiple variables (hair moisture, skin sensitivity, time of day, chemical interactions). Static menus cannot anticipate thousands of combinations. <em>Only Large Language Models (LLMs) with natural language comprehension can interpret nuanced customer situations.</em></li>
-  <li><strong>The Necessity of Source-Grounded RAG:</strong> Generic public LLMs hallucinate medical claims. To ensure clinical safety, the AI must strictly retrieve verified chunks from Man Matters' vetted medical guidelines.</li>
-  <li><strong>Male Vulnerability & Social Stigma:</strong> Men rarely discuss hair loss or skin issues with peers and will not call a public customer helpline. They demand a private, judgment-free, instant AI companion available at midnight when anxiety peaks.</li>
-</ul>
-<p>
-  <strong>Fit into Broader Customer Experience:</strong> The post-purchase guidance void sits right at the critical inflection point between initial onboarding and long-term retention. Dropping customers during this window converts high upfront customer acquisition costs (CAC) into wasted spend and churn.
+<p><strong>What We Recommend We Improve:</strong></p>
+<p style="margin-top:4px;">
+Man Matters must evolve from a purely transactional e-commerce platform into an <strong>active clinical adherence partner</strong>. We must provide: (1) 24/7 instant conversational answers grounded in clinical documentation, (2) automated ingredient compatibility audits to prevent skin damage, and (3) interactive daily AM/PM routines with habit streaks.
 </p>
 
-<h2>6. The Different Problems Considered</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Problem Considered</th>
-      <th>Customer Severity</th>
-      <th>Business Impact</th>
-      <th>AI / Tech Fit</th>
-      <th>Strategic Assessment</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1. Packaging & Dispenser Ergonomics</strong></td>
-      <td>Moderate</td>
-      <td>Low</td>
-      <td>Low (Hardware/Mold)</td>
-      <td>Solves minor annoyances, but does not prevent regimen abandonment.</td>
-    </tr>
-    <tr>
-      <td><strong>2. Subscription Refill Misalignment</strong></td>
-      <td>Moderate</td>
-      <td>Medium</td>
-      <td>Low (Standard ERP)</td>
-      <td>Operational billing issue solvable via standard e-commerce logic without AI.</td>
-    </tr>
-    <tr>
-      <td><strong>3. Tele-Doctor Scheduling Latency</strong></td>
-      <td>High</td>
-      <td>Medium</td>
-      <td>Medium (Queue Ops)</td>
-      <td>Primarily a medical staffing capacity bottleneck, not a direct product software solution.</td>
-    </tr>
-    <tr>
-      <td><strong>4. The Active-Ingredient Guidance, Symptom Triage & Adherence Void</strong></td>
-      <td><strong>Critical</strong></td>
-      <td><strong>Massive (Dictates LTV)</strong></td>
-      <td><strong>High (LLM + RAG + Guardrails)</strong></td>
-      <td><strong>CHOSEN: Solves the primary cause of churn; uniquely solvable through an AI-powered conversational platform.</strong></td>
-    </tr>
-  </tbody>
-</table>
-
+<h3>4. The Problem Statement & Root Cause</h3>
 <div class="problem-box">
-  <h3>7. The One Problem Chosen to Solve (Problem Statement)</h3>
-  <p>
-    "Men purchasing active-ingredient wellness products from Man Matters experience acute information confusion, routine fragmentation, and unguided symptom anxiety during their first 30 to 60 days of usage. Because existing digital channels only offer static marketing copy or delayed doctor tele-consults, customers lack immediate, contextual, and clinically grounded reassurance for daily application questions, product layering, and normal adjustment symptoms (such as dread shedding, purging, or carrier flaking). This post-purchase guidance void leads to improper application, anxiety-driven treatment pauses, and high early regimen abandonment."
+  <p class="problem-quote">
+    "Men purchasing active-ingredient treatments from Man Matters experience severe routine confusion and symptom anxiety during their first 30 to 60 days. Because existing support channels rely on static FAQs or delayed doctor consults, customers lack immediate, clinically accurate guidance for daily application, ingredient layering, and normal adjustment symptoms (such as dread shedding or skin purging). This guidance void leads to application errors, anxiety-driven treatment pauses, and high early regimen abandonment."
   </p>
 </div>
+<p><strong>System Root Cause:</strong> The D2C wellness model is optimized for customer acquisition and order fulfillment. However, physical wellness requires 90 to 180 days of continuous daily discipline. The post-purchase experience currently leaves customers on their own right when questions, adjustment phases, and chemical misapplications peak.</p>
 
-<h2>8. Why This Problem Was Chosen Over the Others</h2>
-<ol>
-  <li><strong>Directly Fixes the Core Business Leak (LTV:CAC):</strong> Acquisition cost is paid on Day 1. Early churn destroys the entire downstream repeat subscription value (Months 2–12). Solving adherence via AI is Mosaic's highest-leverage financial driver.</li>
-  <li><strong>Solves Genuine Human Distress:</strong> Symptom panic and misapplication cause physical harm (severe erythema, rapid telogen effluvium) and acute psychological anxiety.</li>
-  <li><strong>Strictly Requires AI (Cannot Be Solved by Traditional UI):</strong> Multi-variable queries (e.g. Ketoconazole timing with Minoxidil, or derma-rolling rest windows) cannot be handled by static trees. RAG grounded in verified brand literature delivers instant, accurate, conversational answers 24/7.</li>
-  <li><strong>Stigma-Free Autonomous Experience:</strong> Provides men with confidential, immediate reassurance at midnight when anxiety peaks, without waiting days for doctor chats.</li>
-</ol>
+<h3>5. The Technology Solution: ManCare AI (Built for Part 2)</h3>
+<p>To directly solve the pain points identified across all five customer conversations, I built and deployed <strong>ManCare AI</strong> (<a href="https://github.com/yashsidana/mancare-ai" target="_blank">github.com/yashsidana/mancare-ai</a>):</p>
 
-<h2>9. Basis for the AI-Powered Technology Solution in Part 2</h2>
-<p>The Part 1 research establishes the direct functional blueprint for <strong>ManCare AI</strong>, an AI-powered companion application:</p>
-<ul>
-  <li><strong>1. RAG-Grounded AI Wellness Assistant:</strong> <em>Solves Nikhil's and Ritish's symptom panic.</em> Uses vector retrieval (FAISS/Chroma) over Man Matters' official product dossiers and clinical guidelines to deliver 24/7 cited, hallucination-free answers about usage, timing, and dread shedding.</li>
-  <li><strong>2. Smart Product Finder & Active Compatibility Engine:</strong> <em>Solves Sarthak's and Rishi's ingredient clashing.</em> Uses semantic analysis and chemical rules to evaluate product combinations, detect contraindications (e.g. Salicylic Acid + Retinol), and recommend safe layering.</li>
-  <li><strong>3. Personalized Routine Orchestrator & Habit Tracker:</strong> <em>Solves Gaurang's misapplication and Rishi's missed doses.</em> Generates unified AM/PM schedules with contraindication checks (e.g. 24h rest post-derma-rolling) and habit streaks.</li>
-  <li><strong>4. AI Clinical Safety Guardrails & Doctor Escalation:</strong> <em>Protects user safety.</em> An intent and symptom classification layer detects true adverse reactions (severe dermatitis, allergic reactions) and halts automated guidance, instantly routing the user to human physicians.</li>
-</ul>
-
-<div style="margin-top: 25px; border-top: 1px solid #cbd5e1; padding-top: 8px; font-size: 8pt; color: #64748b; text-align: center;">
-  Mosaic Fellowship Builder Challenge (2027 Batch) • Candidate: Yash Sidana • Brand: Man Matters • Connected Solution: ManCare AI
+<div class="grid">
+  <div class="grid-card">
+    <div class="grid-card-title">1. Grounded Clinical RAG Assistant</div>
+    <div style="font-size:9pt; color:#475569;">Indexed on 32 official Man Matters clinical dossiers & FAQs. Answers shedding biology, usage methods, and timelines 24/7 with zero hallucinations. <em>Directly solves Nikhil and Ritish's panic.</em></div>
+  </div>
+  <div class="grid-card">
+    <div class="grid-card-title">2. Ingredient Compatibility Engine</div>
+    <div style="font-size:9pt; color:#475569;">Pharmacological rule engine auditing multi-product carts. Automatically detects clashes (Derma Roller + Beard Oil), prevents chemical burns, and mandates SPF 50. <em>Directly solves Gaurang and Sarthak's mistakes.</em></div>
+  </div>
+  <div class="grid-card">
+    <div class="grid-card-title">3. 7-Day Routine & Streak Tracker</div>
+    <div style="font-size:9pt; color:#475569;">Splits daily routines into morning/night steps, enforces 24h rest post-rolling, and tracks habit streaks across 90 days. <em>Directly solves Rishi's inconsistency.</em></div>
+  </div>
+  <div class="grid-card">
+    <div class="grid-card-title">4. Red-Flag Medical Triage</div>
+    <div style="font-size:9pt; color:#475569;">Detects dangerous symptoms (chest pain, severe contact dermatitis) and safely routes users directly to human doctors while reassuring mild adjustment dryness.</div>
+  </div>
 </div>
+
+<p style="font-size:9pt; color:#64748b; margin-top:16px; border-top:1px solid #e2e8f0; padding-top:8px;">
+Mosaic Fellowship 2027 Builder Challenge &bull; Candidate: Yash Sidana &bull; Submitted for Man Matters (Mosaic Wellness)
+</p>
 
 </body>
 </html>
-
