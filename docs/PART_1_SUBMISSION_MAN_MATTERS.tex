@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.8in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -8,12 +8,13 @@
 \usepackage{titlesec}
 \usepackage{parskip}
 
-% Colors
+% Brand Color Palette (Man Matters Official Brand Colors)
 \definecolor{brandteal}{RGB}{15, 118, 110}
 \definecolor{branddark}{RGB}{19, 78, 74}
 \definecolor{boxbg}{RGB}{240, 253, 250}
 \definecolor{alertbg}{RGB}{254, 243, 199}
 \definecolor{alertborder}{RGB}{217, 119, 6}
+\definecolor{textdark}{RGB}{30, 41, 59}
 
 \hypersetup{
     colorlinks=true,
@@ -21,26 +22,34 @@
     urlcolor=brandteal
 }
 
-\titleformat{\section}{\large\bfseries\color{brandteal}}{}{0em}{}[\titlerule]
+% Section Formats
+\titleformat{\section}{\large\bfseries\color{brandteal}}{}{0em}{}[\vspace{2pt}\titlerule]
 \titleformat{\subsection}{\normalsize\bfseries\color{branddark}}{}{0em}{}
 
 \setlist{itemsep=2pt, topsep=2pt}
 
 \begin{document}
 
+% Header
 \begin{center}
     {\LARGE \textbf{\color{brandteal}Mosaic Fellowship Builder Challenge (2027 Batch)}}\\[4pt]
-    {\large \textbf{\color{branddark}Part 1: Customer Research, Problem Statement \& The AI Solution}}\\[6pt]
-    \small \textbf{Candidate:} Yash Sidana \quad$\vert$\quad \textbf{Email:} \href{mailto:ysidana_be23@thapar.edu}{ysidana\_be23@thapar.edu}\\[3pt]
-    \small \textbf{College:} Thapar Institute of Engineering and Technology \quad$\vert$\quad \textbf{Brand:} Man Matters (Mosaic Wellness)\\[3pt]
-    \small \textbf{Part 2 Live Web App:} \href{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}{mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app}
+    {\large \textbf{\color{branddark}Part 1: Customer Research, Problem Statement \& The AI Solution}}
 \end{center}
-\vspace{12pt}
+\vspace{4pt}
+
+% Candidate & Metadata Box (Clean boxed layout, NO cutting lines)
+\begin{tcolorbox}[colback=boxbg, colframe=brandteal, arc=2mm, boxrule=0.8pt, left=10pt, right=10pt, top=7pt, bottom=7pt]
+\centering\small
+\textbf{Candidate:} Yash Sidana \quad$\vert$\quad \textbf{Email:} \href{mailto:ysidana_be23@thapar.edu}{ysidana\_be23@thapar.edu}\\[3pt]
+\textbf{College:} Thapar Institute of Engineering and Technology \quad$\vert$\quad \textbf{Brand:} Man Matters (Mosaic Wellness)\\[4pt]
+\textbf{Part 2 Live Web App:} \href{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}{\texttt{\textbf{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}}}
+\end{tcolorbox}
+\vspace{6pt}
 
 \section*{1. Context \& Overview}
 To understand how men navigate digital health, I spoke with five real customers of \textbf{Man Matters}. All five use active-ingredient products (Minoxidil, Finasteride, Salicylic Acid, Derma Rollers, Shilajit) that require 90 to 180 days of daily discipline to see visible physical results.
 
-Across these calls, a clear pattern emerged: users love the products and delivery, but they hit severe confusion and anxiety during the first 30--60 days when normal adjustment symptoms (like shedding or purging) or layering doubts arise. To solve this, I designed and built \textbf{ManCare AI}---an intelligent companion grounded in official Man Matters clinical data to support users 24/7.
+Across these calls, a clear pattern emerged: users love the products and delivery, but they hit severe confusion and anxiety during the first 30--60 days when normal adjustment symptoms (like shedding or purging) or layering doubts arise. To solve this, I designed, built, and deployed \textbf{ManCare AI}---an intelligent companion grounded in official Man Matters clinical data to support users 24/7.
 
 \section*{2. Customer Conversations (Five Real Users)}
 
@@ -73,7 +82,7 @@ Across these calls, a clear pattern emerged: users love the products and deliver
 
 \subsection*{4. Ritish Gupta (Age 21, Student) \hfill \normalfont\small Phone: \texttt{+91 7740092977}}
 \begin{itemize}
-    \item \textbf{Products Used:} Topical Minoxidil + Finasteride 0.1%, Ketoconazole 2\% Anti-Dandruff Shampoo (4 months; paused).
+    \item \textbf{Products Used:} Topical Minoxidil + Finasteride 0.1\%, Ketoconazole 2\% Anti-Dandruff Shampoo (4 months; paused).
     \item \textbf{What He Likes:} Genuine visible regrowth by Month 3---crown density thickened and hairline stabilized.
     \item \textbf{What He Does Not Like:} In Month 3.5, he developed itchy scalp flaking. Panicked that he was having an allergic reaction to Finasteride, he tried to book an in-app doctor. The nearest slot was 48 hours away. He quit using the solution out of anxiety for 4 weeks, wiping out months of progress.
     \item \textbf{What More He Wants Us To Do:} Instant medical triage to differentiate mild carrier dryness from dangerous allergic reactions so users don't abandon working treatments while waiting days for an appointment.
@@ -101,7 +110,7 @@ Across these calls, a clear pattern emerged: users love the products and deliver
 Man Matters must evolve from a purely transactional e-commerce platform into an \textbf{active clinical adherence partner}. We must provide: (1) 24/7 instant conversational answers grounded in clinical documentation, (2) automated ingredient compatibility audits to prevent skin damage, and (3) interactive daily AM/PM routines with habit streaks.
 
 \section*{4. The Problem Statement \& Root Cause}
-\begin{tcolorbox}[colback=alertbg, colframe=alertborder, arc=3mm, left=8pt, right=8pt, top=6pt, bottom=6pt]
+\begin{tcolorbox}[colback=alertbg, colframe=alertborder, arc=2mm, left=8pt, right=8pt, top=6pt, bottom=6pt]
 \textbf{\color{branddark}The Problem Statement:}\\
 \textit{``Men purchasing active-ingredient treatments from Man Matters experience severe routine confusion and symptom anxiety during their first 30 to 60 days. Because existing support channels rely on static FAQs or delayed doctor consults, customers lack immediate, clinically accurate guidance for daily application, ingredient layering, and normal adjustment symptoms (such as dread shedding or skin purging). This guidance void leads to application errors, anxiety-driven treatment pauses, and high early regimen abandonment.''}
 \end{tcolorbox}
@@ -109,7 +118,7 @@ Man Matters must evolve from a purely transactional e-commerce platform into an 
 \textbf{System Root Cause:} The D2C wellness business model is engineered around customer acquisition and order fulfillment. However, physical wellness requires 90 to 180 days of continuous daily discipline. The post-purchase experience currently leaves customers on their own right when questions, adjustment phases, and chemical misapplications peak.
 
 \section*{5. The Technology Solution: ManCare AI (Part 2 Live Web Application)}
-To directly solve the pain points identified across all five customer conversations, I built and deployed \textbf{ManCare AI} (Live application: \href{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}):
+To directly solve the pain points identified across all five customer conversations, I built and deployed \textbf{ManCare AI} (Live application: \href{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}{\texttt{https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/}}):
 
 \begin{itemize}
     \item \textbf{1. Grounded Clinical RAG Assistant:} Indexed on 32 official Man Matters clinical dossiers and FAQs. Answers shedding biology, usage methods, and timelines 24/7 with zero hallucinations. \textit{Directly solves Nikhil and Ritish's panic.}
