@@ -2,6 +2,8 @@
 ## Part 1: Customer Research, Problem Definition & AI Solution Architecture
 
 **Candidate:** Yash Sidana  
+**College:** Thapar Institute of Engineering and Technology  
+**Email:** ysidana_be23@thapar.edu  
 **Selected Brand:** Man Matters (Mosaic Wellness)  
 **Part 2 Live Web Application:** [https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/](https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/)  
 
@@ -49,7 +51,7 @@ Through these calls, I uncovered a consistent breakdown: customers love the prod
 #### Customer 4: Ritish Gupta (Age 21, Student)
 * **Phone:** `+91 7740092977`
 * **Products Used:** Topical Minoxidil + Finasteride 0.1%, Ketoconazole 2% Anti-Dandruff Shampoo (4 months; paused).
-* **What He Likes:** Genuine visible regrowth by Month 3—crown filled out and hairline stabilized.
+* **What He Likes:** Genuine visible regrowth by Month 3—crown density thickened and hairline stabilized.
 * **What He Does Not Like:** In Month 3.5, he developed itchy scalp flaking. Panicked that he was allergic to Finasteride, he tried to book an app doctor. The nearest slot was 48 hours away. He quit using the solution out of anxiety for 4 weeks, wiping out months of progress.
 * **What More He Wants Us To Do:** Instant medical triage to differentiate mild carrier dryness from dangerous allergic reactions so users don't abandon working treatments while waiting days for an appointment.
 * **How Our AI Solution (ManCare AI) Solves This:** ManCare provides instant triage—differentiating normal alcohol-carrier flaking from genuine contact dermatitis, offering immediate soothing steps, and immediately routing red-flag cases to a physician.
@@ -111,6 +113,7 @@ To directly solve the pain points identified across all five customer conversati
 ---
 
 ### 5. Part 2 Live Application
+* **Candidate:** Yash Sidana (ysidana_be23@thapar.edu) — Thapar Institute of Engineering and Technology
 * **Live Web App Link:** [https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/](https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/)
 * **Authentic Catalog:** 15 verified Man Matters products across Hair, Beard, Skin, and Nutrition with official pricing, ingredients, and URLs.
 * **Full Working Suite:** RAG Clinical Q&A, Active Compatibility Auditor, 7-Day Smart Scheduler, Red-Flag Triage, and Direct Doctor Escalation.
