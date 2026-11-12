@@ -3,7 +3,7 @@
 
 **Candidate:** Yash Sidana  
 **Selected Brand:** Man Matters (Mosaic Wellness)  
-**Part 2 AI Solution:** [ManCare AI on GitHub](https://github.com/yashsidana/mancare-ai)  
+**Part 2 Live Web Application:** [https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/](https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/)  
 
 ---
 
@@ -93,29 +93,7 @@ Through these calls, I uncovered a consistent breakdown: customers love the prod
 
 ### 4. The AI Solution Built for Part 2: ManCare AI
 
-To directly solve the pain points identified across all five customer conversations, I designed, built, and deployed **ManCare AI** ([GitHub Repository](https://github.com/yashsidana/mancare-ai)).
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                       MANCARE AI                            │
-│           Intelligent Adherence & Safety Platform           │
-└──────────────┬───────────────────────────────┬──────────────┘
-               │                               │
-  ┌────────────▼────────────┐     ┌────────────▼────────────┐
-  │  24/7 Clinical RAG      │     │  Compatibility Engine   │
-  │  Indexed on official    │     │  Flags chemical clashes │
-  │  clinical dossiers &    │     │  & enforces 24h rest    │
-  │  FAQs (Solves Nikhil &  │     │  periods (Solves        │
-  │  Ritish's panic)        │     │  Gaurang & Sarthak)     │
-  └────────────┬────────────┘     └────────────┬────────────┘
-               │                               │
-  ┌────────────▼────────────┐     ┌────────────▼────────────┐
-  │  7-Day Routine Manager  │     │  Red-Flag Triage        │
-  │  AM/PM schedules with   │     │  Detects dangerous      │
-  │  habit streaks (Solves  │     │  allergies & routes to  │
-  │  Rishi's inconsistency) │     │  human doctor           │
-  └─────────────────────────┘     └─────────────────────────┘
-```
+To directly solve the pain points identified across all five customer conversations, I designed, built, and deployed **ManCare AI** ([Live Web Application](https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/)).
 
 #### Core Modules & How They Directly Solve Customer Pain:
 
@@ -132,7 +110,7 @@ To directly solve the pain points identified across all five customer conversati
 
 ---
 
-### 5. Part 2 Deliverables Summary
-* **GitHub Repository:** [https://github.com/yashsidana/mancare-ai](https://github.com/yashsidana/mancare-ai)
+### 5. Part 2 Live Application
+* **Live Web App Link:** [https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/](https://mancare-ai-lvn5appppksyf9psquwoavta.streamlit.app/)
 * **Authentic Catalog:** 15 verified Man Matters products across Hair, Beard, Skin, and Nutrition with official pricing, ingredients, and URLs.
-* **Deployment Ready:** Full Streamlit Cloud configuration with `requirements.txt`, `app.py`, and custom Man Matters brand theme.
+* **Full Working Suite:** RAG Clinical Q&A, Active Compatibility Auditor, 7-Day Smart Scheduler, Red-Flag Triage, and Direct Doctor Escalation.
